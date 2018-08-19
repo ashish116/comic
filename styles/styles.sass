@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400')
+
+*
+  box-sizing: border-box
+html, body
+  margin: 0
+  font-family: Roboto
+
+  .top
+    position: relative
+    width: 100%
+    height: 800px
+    // background-color: #ddd
+    text-align: center
+    overflow: hidden
+    *
+      z-index: 5
+    .back-img
+      position: absolute
+      height: 100%
+      width: 100%
+      background:
+        image: url(../architecture-bay-bridge-356830.jpg)
+        position: center center
+        size: cover
+        color: rgba(0,0,0,0.3)
+        blend-mode: multiply
+      filter: blur(3px)
+      z-index: -1
+    nav
+      position: relative
+      display: inline-flex
+      height: 85px
+      width: 85%
+      background-color: #fff
+      margin-top: 30px
+      justify-content: space-between
+      align-items: center
+      // padding: 0 20px
+      border-radius: 2px
+      box-shadow: 0 0 20px 0px rgba(155, 155, 155, 0.6)
+      h1
+        display: inline-block
+        margin: 0
+        color: #5a9bd2
+        margin-left: 20px
+      .nav-buttons
+        display: flex
+        flex-direction: row
+        list-style-type: none
+        height: 100%
+        li
+          display: inline-block
+          height: 100%
+          padding: 0 20px
+          color: #666
+          line-height: 80px
+          transition: all 300ms ease
+          a, a:link, a:active, a:visited
+            display: inline-block
+            height: 100%
+            color: #666
+            text-decoration: none
+          &:hover, a:hover
+            background-color: #FF4500
+            color: #fff
+            cursor: pointer
+    .to-center
+      // display: flex
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      height: fit-content
+      margin: auto
+      width: 100%
+      color: #fff
+      h5
+        marign: 0
+        font-size: 1.2em
+      h1
+        margin: 15px 0
+        font-size: 2.2em
+        letter-spacing: 4px
+        font-weight: 100
+      .to-center-buttons
+        .b1
+          border: 0
+          height: 40px
+          // width: 120px
+          color: #fff
+          font-size: 1.1em
+          background-color: #5a9bd2
+          letter-spacing: 1px
+          padding: 0 20px
+          &:focus
+            outline: none
+
+  .second
+    .blue-area
+      width: 100%
+      background-color: #5a9bd2
+      padding: 100px 0
+      text-align: center
+      color: #fff
+      h1
+        font-size: 2.3em
+        font-weight: 100
+        margin-top: 0
+        text-transform: uppercase
+      h5
+        font-size: 1.3em
+      button
+        height: 50px
+        width: 130px
+        border: 1.5px solid #fff
+        background-color: transparent
+        color: #fff
+    .showcase
+      display: flex
+      flex-direction: row
+      height: 350px
+      .items-showcase
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        width: 33.33%
+        text-align: center
+        .img
+          height: 70px
+          width: 70px
+          background-color: #fff
+          border-radius: 50%
+          padding-top: 10px
+        h4
+          font-size: 1.6em
+          color: #fff
+        p
+          color: #fff
+          width: 50%
+        background-image: url(../1.jpeg)
+        background-blend-mode: multiply
+        fliter: blur(3px)
+        &:nth-child(1)
+          background-color: rgba(255,69,0, 0.8)
+        &:nth-child(2)
+          background-color: rgba(0,0,0,0.7)
+        &:nth-child(3)
+          background-color: rgba(90, 155, 210, 0.8)
+
+  footer
+    position: relative
+    display: flex
+    justify-content: space-between
+    // align-items: center
+    height: 140px
+    width: 100%
+    background-color: #5a9bd2
+    padding: 20px
+    .left
+      img
+        height: 60px
+        width: 80px
+    .right
+      list-style-type: none
+      color: #333
+    .center
+      position: absolute
+      bottom: 0
+      // width: 100%
+      h3
+        text-align: center
+@media screen and (max-width: 350px)
+  html, body
+    .top
+      nav
+        h1
+          display: none
+      .to-center
+        h1
+          font-size: 1.9em
+    .second
+      .blue-area
+        h1
+          font-size: 1.9em
+      .showcase
+        flex-direction: column
+        height: 600px
+        // width: 100%
+        .items-showcase
+          width: 100%
+          height: 33.33%
+          h4
+            margin: 0

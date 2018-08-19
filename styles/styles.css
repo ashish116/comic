@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: Roboto;
+}
+html .top, body .top {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  overflow: hidden;
+}
+html .top *, body .top * {
+  z-index: 5;
+}
+html .top .back-img, body .top .back-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../architecture-bay-bridge-356830.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  filter: blur(1.5px);
+  z-index: -1;
+}
+html .top nav, body .top nav {
+  position: relative;
+  display: inline-flex;
+  height: 85px;
+  width: 75%;
+  background-color: #fff;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 0 20px 0px rgba(155, 155, 155, 0.6);
+}
+html .top nav h1, body .top nav h1 {
+  display: inline-block;
+  margin: 0;
+  color: #5a9bd2;
+  margin-left: 20px;
+}
+html .top nav .nav-buttons, body .top nav .nav-buttons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  height: 100%;
+}
+html .top nav .nav-buttons li, body .top nav .nav-buttons li {
+  display: inline-block;
+  height: 100%;
+  padding: 0 20px;
+  color: #666;
+  line-height: 80px;
+  transition: all 300ms ease;
+}
+html .top nav .nav-buttons li a, html .top nav .nav-buttons li a:link, html .top nav .nav-buttons li a:active, html .top nav .nav-buttons li a:visited, body .top nav .nav-buttons li a, body .top nav .nav-buttons li a:link, body .top nav .nav-buttons li a:active, body .top nav .nav-buttons li a:visited {
+  display: inline-block;
+  height: 100%;
+  color: #666;
+  text-decoration: none;
+}
+html .top nav .nav-buttons li:hover, html .top nav .nav-buttons li a:hover, body .top nav .nav-buttons li:hover, body .top nav .nav-buttons li a:hover {
+  background-color: #FF4500;
+  color: #fff;
+  cursor: pointer;
+}
+html .top .to-center, body .top .to-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: fit-content;
+  margin: auto;
+  width: 100%;
+  color: #fff;
+}
+html .top .to-center h5, body .top .to-center h5 {
+  marign: 0;
+  font-size: 1.2em;
+}
+html .top .to-center h1, body .top .to-center h1 {
+  margin: 15px 0;
+  font-size: 2.2em;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+html .top .to-center .to-center-buttons .b1, body .top .to-center .to-center-buttons .b1 {
+  border: 0;
+  height: 40px;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #5a9bd2;
+  letter-spacing: 1px;
+  padding: 0 20px;
+}
+html .top .to-center .to-center-buttons .b1:focus, body .top .to-center .to-center-buttons .b1:focus {
+  outline: none;
+}
+html .second .blue-area, body .second .blue-area {
+  width: 100%;
+  background-color: #5a9bd2;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+html .second .blue-area h1, body .second .blue-area h1 {
+  font-size: 2.3em;
+  font-weight: 100;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+html .second .blue-area h5, body .second .blue-area h5 {
+  font-size: 1.3em;
+
+  
+}
+html .second .blue-area button, body .second .blue-area button {
+  height: 50px;
+  width: 130px;
+  border: 1.5px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+html .second .showcase, body .second .showcase {
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+}
+html .second .showcase .items-showcase, body .second .showcase .items-showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 33.33%;
+  text-align: center;
+  background-image: url(../1.jpeg);
+  background-blend-mode: multiply;
+  fliter: blur(3px);
+}
+html .second .showcase .items-showcase .img, body .second .showcase .items-showcase .img {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+html .second .showcase .items-showcase h4, body .second .showcase .items-showcase h4 {
+  font-size: 1.6em;
+  color: #fff;
+}
+html .second .showcase .items-showcase p, body .second .showcase .items-showcase p {
+  color: #fff;
+  width: 50%;
+}
+html .second .showcase .items-showcase:nth-child(1), body .second .showcase .items-showcase:nth-child(1) {
+  background-color: rgba(255, 69, 0, 0.8);
+}
+html .second .showcase .items-showcase:nth-child(2), body .second .showcase .items-showcase:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+html .second .showcase .items-showcase:nth-child(3), body .second .showcase .items-showcase:nth-child(3) {
+  background-color: rgba(90, 155, 210, 0.8);
+}
+html footer, body footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+  width: 100%;
+  background-color: #5a9bd2;
+  padding: 20px;
+}
+html footer .left img, body footer .left img {
+  height: 60px;
+  width: 80px;
+}
+html footer .right, body footer .right {
+  list-style-type: none;
+  color: #333;
+}
+html footer .center, body footer .center {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+html footer .center h3, body footer .center h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+  html .top nav h1, body .top nav h1 {
+    display: none;
+  }
+  html .top .to-center h1, body .top .to-center h1 {
+    font-size: 1.9em;
+  }
+  html .second .blue-area h1, body .second .blue-area h1 {
+    font-size: 1.9em;
+  }
+  html .second .showcase, body .second .showcase {
+    flex-direction: column;
+    height: 600px;
+  }
+  html .second .showcase .items-showcase, body .second .showcase .items-showcase {
+    width: 100%;
+    height: 33.33%;
+  }
+  html .second .showcase .items-showcase h4, body .second .showcase .items-showcase h4 {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
